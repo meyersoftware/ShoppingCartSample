@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using System.Net;
-using System.IO;
 using ShoppingCartExample.Models;
-using System.Runtime.Serialization.Json;
-using System.Text;
-using Newtonsoft.Json;
-using System.Web.Script.Serialization;
 using ShoppingCartExample.Content;
 
 namespace ShoppingCartExample.Controllers
