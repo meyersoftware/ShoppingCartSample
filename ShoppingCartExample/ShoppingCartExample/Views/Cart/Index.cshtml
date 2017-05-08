@@ -1,0 +1,78 @@
+﻿@model IEnumerable<ShoppingCartExample.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    double TotalPrice = 0;
+    int TotalCount = 0;
+}
+
+<h2>Cart</h2>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model =>model.Count)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    TotalPrice += item.Price * item.Count;
+    TotalCount += item.Count;
+    <tr>
+        <td>
+            <img src="..\Images\@Html.DisplayFor(modelItem => item.Image)" alt="Sample Image" width="300px" />
+        </td>
+        <td style="white-space: nowrap;">
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+            
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+            
+        </td>
+        <td>
+            <input type="button" value="Remove" class="btn btn-default" onclick="location.href='@Url.Action("Remove", "Cart", new { item.ProductID })'" />
+        </td>
+    </tr>
+}
+    <tr>
+        <td></td>
+        <td></td>
+        <td align="right"><b>Total:</b></td>
+        <td>@string.Format("{0:c}", TotalPrice)</td> 
+        <td>@TotalCount</td> 
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Continue Shopping" class="btn btn-default" onclick="location.href='@Url.Action("Index","Home")'" />
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td><input type="button" value="Checkout" class="btn btn-default" onclick="location.href='@Url.Action("Index","User")'" /></td>
+    </tr>
+</table>

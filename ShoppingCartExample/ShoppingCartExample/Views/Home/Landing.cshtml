@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Landing";
+}
+
+@*<script language="JavaScript" type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#buttonId').click(function(){
+            document.location = '@Url.Action("Index","Home")';
+        });
+    });
+
+</script>*@
+
+<h2>Is it safe to dance? (with soup)</h2>
+
+<img src="~/Images/eatit.png" />
+<br />
+<br />
+<input type="button" @*id="buttonId"*@ @*name="buttonId"*@ value="Test Your Luck" onclick="location.href='@Url.Action("Index", "Home")'" class="btn btn-default" />
+
