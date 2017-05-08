@@ -87,3 +87,14 @@ C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\S
 C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Web.WebPages.Razor.xml
 C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\obj\Debug\ShoppingCartExample.dll
 C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\obj\Debug\ShoppingCartExample.pdb
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Extensions.dll
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Formatting.dll
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Primitives.dll
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Web.Http.dll
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Web.Http.WebHost.dll
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Extensions.xml
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Formatting.xml
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Net.Http.Primitives.xml
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Web.Http.xml
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\bin\System.Web.Http.WebHost.xml
+C:\Users\anita\OneDrive\Documents\GitHub\ShoppingCartSample\ShoppingCartSample\ShoppingCartExample\ShoppingCartExample\obj\Debug\ShoppingCartExample.csproj.App.config
