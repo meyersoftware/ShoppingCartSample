@@ -22,7 +22,7 @@ namespace ShoppingCartExample.Content
             return products;
         }
 
-        public static bool StoreCustomer(Customer customer)
+        public static int StoreCustomer(Customer customer)
         {
             StringBuilder sb = new StringBuilder();
             StringWriter sw = new StringWriter(sb);
@@ -35,14 +35,14 @@ namespace ShoppingCartExample.Content
             //writer.WriteEnd();
             js.Serialize(writer, customer);
 
-            var request = (HttpWebRequest)WebRequest.Create("http://scwcfrest.apphb.com/api/service/GetCustomer/?customer=" + sb);
+            var request = (HttpWebRequest)WebRequest.Create("http://localhost:59001/api/service/GetCustomer/?customer=" + sb);
             request.ContentType = "application/json";
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);
-            bool test = bool.Parse(reader.ReadToEnd());
+            int customerID = int.Parse(reader.ReadToEnd());
             //this is fun
-            return test;
+            return customerID;
         }
     }
 }
