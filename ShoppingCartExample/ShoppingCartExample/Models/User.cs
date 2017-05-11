@@ -31,6 +31,22 @@ namespace ShoppingCartExample.Models
         [Required(ErrorMessage = "I'll give you a hint: it's 5 digits.")]
         public string Zip { get; set; }
 
+        public Customer ToCustomer(User user)
+        {
+            Customer customer = new Models.Customer();
+
+            customer.Firstname = user.FirstName;
+            customer.Middlename = user.MiddleName;
+            customer.Lastname = user.LastName;
+            customer.Address = user.Address;
+            customer.Address2 = user.Address2;
+            customer.City = user.City;
+            customer.State = user.State;
+            customer.Zip = user.Zip;
+
+            return customer;
+        }
+
         public string Status { get; set; }
 
         public User()

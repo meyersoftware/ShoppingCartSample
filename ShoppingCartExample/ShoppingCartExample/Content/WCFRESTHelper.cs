@@ -31,9 +31,12 @@ namespace ShoppingCartExample.Content
             //customerdata.Data = customer;
             JsonSerializer js = JsonSerializer.Create();
             JsonWriter writer = new JsonTextWriter(sw);
+            //writer.WriteStartObject();
+            //writer.WriteEnd();
             js.Serialize(writer, customer);
 
             var request = (HttpWebRequest)WebRequest.Create("http://scwcfrest.apphb.com/api/service/GetCustomer/?customer=" + sb);
+            request.ContentType = "application/json";
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);

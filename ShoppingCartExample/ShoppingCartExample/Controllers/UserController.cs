@@ -1,4 +1,5 @@
-﻿using ShoppingCartExample.Models;
+﻿using ShoppingCartExample.Content;
+using ShoppingCartExample.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,8 @@ namespace ShoppingCartExample.Controllers
             {
                 return View(user);
             }
+
+            WCFRESTHelper.StoreCustomer(user.ToCustomer(user));
             return RedirectToAction("GoodJob");
         }
     }
