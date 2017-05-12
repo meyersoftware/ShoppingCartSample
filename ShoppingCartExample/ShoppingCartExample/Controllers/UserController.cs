@@ -27,7 +27,15 @@ namespace ShoppingCartExample.Controllers
                 return View(user);
             }
 
-            WCFRESTHelper.StoreCustomer(user.ToCustomer(user));
+            int customerID = WCFRESTHelper.StoreCustomer(user.ToCustomer(user));
+
+            Cart sessionCart = (Cart)Session["Cart"];
+
+            foreach(Product p in sessionCart.Products)
+            {
+                WCFRESTHelper.StoreOrders(customerID, p.ProductID, p.Count);
+            }
+            
             return RedirectToAction("GoodJob");
         }
     }

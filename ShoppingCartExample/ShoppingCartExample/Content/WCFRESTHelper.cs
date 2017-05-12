@@ -35,7 +35,7 @@ namespace ShoppingCartExample.Content
             //writer.WriteEnd();
             js.Serialize(writer, customer);
 
-            var request = (HttpWebRequest)WebRequest.Create("http://localhost:59001/api/service/GetCustomer/?customer=" + sb);
+            var request = (HttpWebRequest)WebRequest.Create("http://scwcfrest.apphb.com/api/service/InsertCustomer/?customer=" + sb);
             request.ContentType = "application/json";
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
@@ -43,6 +43,17 @@ namespace ShoppingCartExample.Content
             int customerID = int.Parse(reader.ReadToEnd());
             //this is fun
             return customerID;
+        }
+
+        public static bool StoreOrders(int customerID, int productID, int count)
+        {
+            var request = (HttpWebRequest)WebRequest.Create("http://scwcfrest.apphb.com/api/service/InsertOrders/?customerid=" + customerID + "&productid=" + productID + "&count=" + count);
+            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            Stream stream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(stream);
+            reader.ReadToEnd();
+
+            return true;
         }
     }
 }
