@@ -1,6 +1,19 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #1e404e;
+    color:white;
+}
+
+hr, 
+pre {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    color: #428bca;
+    border: 1px solid #428bca;
+    border-radius: 4px;
+    background-color: #428bca;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +35,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#h2{
+    
+}
+
+

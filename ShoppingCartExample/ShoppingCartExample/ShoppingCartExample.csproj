@@ -166,6 +166,7 @@
     <Content Include="Images\eatit.png" />
     <Content Include="Images\heartysoup.jpg" />
     <Content Include="Images\jig.jpg" />
+    <Content Include="Images\nicks last page.jpg" />
     <Content Include="Images\stain.jpg" />
     <Content Include="Images\thingamabob.jpg" />
     <Content Include="Images\thingamajig.jpg" />
@@ -202,6 +203,7 @@
     <Content Include="Views\Home\Landing.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\GoodJob.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

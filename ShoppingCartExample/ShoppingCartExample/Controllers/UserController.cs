@@ -38,5 +38,12 @@ namespace ShoppingCartExample.Controllers
             
             return RedirectToAction("GoodJob");
         }
+
+        [HttpGet]
+        public ActionResult GoodJob()
+        {
+
+            return View();
+        }
     }
 }

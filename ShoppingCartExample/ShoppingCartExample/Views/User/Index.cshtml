@@ -83,13 +83,12 @@
         </div>
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
+            <div class="col-md-offset-2 col-md-1">
                 <input type="submit" value="Fini" class="btn btn-default" />
+            </div>
+            <div class="col-md-9">
+                <input type="button" value="Continue Shopping" class="btn btn-default" onclick="location.href='@Url.Action("Index","Home")'" />
             </div>
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Back to Cart", "Index", "Cart")
-</div>
